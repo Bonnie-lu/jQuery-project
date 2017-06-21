@@ -1,0 +1,237 @@
+
+.login-wrapper{
+	background: url(../img/login_bg.jpg) no-repeat 50% center;
+	height: 488px;
+}
+.login-wrapper .container {
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.login-wrapper .container .login-box {
+    width: 380px;
+    height: 368px;
+    margin-top: 40px;
+    margin-left: 570px;
+    padding: 20px;
+    background: white;
+}
+.login-box .login-tabs {
+    margin-bottom: 15px;
+    padding: 0;
+    border-bottom: 2px solid #d9d9d9;
+    height: 42px;
+}
+.login-box .login-tabs li {
+	float: left;
+}
+.login-box .login-tabs li a {
+    font-size: 16px;
+    display: block;
+    margin-bottom: -2px;
+    padding: 10px 35px;
+    border-bottom: 2px solid #d9d9d9;
+    height: 22px;
+}
+.login-box .login-tabs  li .active{
+	border-bottom: 2px solid #FF6600;
+	color: #FF6600;
+}
+.login-box .logMethod{
+    float: right;
+    margin-right: 38px;
+    color: #ff6a00;
+    font-size: 12px;
+    margin-bottom: 23px;
+}
+.login-box .pull-right{
+    float: right;
+    margin-right: 38px;
+    color: #ff6a00;
+    font-size: 12px;
+}
+#dosubmit{
+	margin-top: 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    border: 1px solid #ff6a00;
+    background-color: #ff6a00;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    width: 304px;
+    height: 46px;
+
+}
+#loginPane{
+	width:342px;
+	height: 236px;
+	padding-left: 38px;
+}
+.login-box a:hover{
+	text-decoration: underline;
+}
+.login-box  .other-login {
+    margin-top: 20px;
+    color: #7e7e80;
+    font-size: 12px;
+}
+.form-group1 {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.login-box .login-pane .input-group-addon {
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+    border-right: 0;
+    border-radius: 0;
+    background-color: #eee;
+}
+#loginPane .email_autocomplete1 input {
+    width: 245px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+}
+.form-group1 .input-group div{
+	float: left;
+}
+.form-group1 .input-group .input-group-addon{
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+    border-right: 0;
+    background-color: #eee;
+    width: 16px;
+    height: 18px;
+}
+.form-group1 .input-group .input-group-addon .ico{
+	background: url(../img/common_z.png) no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+.form-group1 .input-group .input-group-addon .ico-user{
+    background-position: -338px -318px;
+}
+.form-group1 .input-group .input-group-addon .ico-lock{
+    background-position: -312px -318px;;
+}
+
+#register{
+	margin-top: 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    border: 1px solid #ff6a00;
+    background-color: #ff6a00;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    width: 304px;
+    height: 46px;
+    cursor: pointer;
+
+}
+#loginPane .form-group{
+	margin-bottom: 10px;
+}
+#loginPane .form-group input{
+	width: 282px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+}
+#loginPane .verify input{
+	width: 88px;
+    height: 18px;
+}
+#loginPane .verify span{
+	display: inline-block;
+	width: 80px;
+	line-height: 25px;
+	text-align: center;
+	border: 1px solid #d2d2d2;
+	vertical-align: middle;
+	margin: 0 10px;
+}
+#loginPane .verify a:last-child{
+	font-size: 12px;
+	color: #FF6A00;
+
+}
+#Enr {
+	width: 278px;
+	height: 18px;
+    line-height: 18px;
+    padding: 3px 12px;
+    color: #7e7e80;
+    border: 1px solid #feb98a;
+    background-color: #fbf0e8;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+#Enr .ico-notic{
+	background: url(../img/common_z.png) no-repeat;
+    background-position: -364px -318px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+
+/*验证码相关css*/
+#ehong-code-input{
+	width:42px;
+	letter-spacing:2px;
+	margin:0px 8px 0px 0px;
+}
+.ehong-idcode-val{
+	position:relative;
+	padding:1px 4px 1px 4px;
+	top:0px;
+	*top:-3px;
+	letter-spacing:4px;
+	display:inline;
+	cursor:pointer;
+	font-size:16px;
+	font-family:"Courier New", Courier, monospace;
+	text-decoration:none;
+	font-weight:bold;
+}
+.ehong-idcode-val0{
+	border:solid 1px #A4CDED;
+	background-color:#ECFAFB;
+}
+
+.ehong-idcode-val1{
+	border:solid 1px #A4CDED;
+	background-color:#FCEFCF;
+}
+.ehong-idcode-val2{
+	border:solid 1px #6C9;
+	background-color:#D0F0DF;
+}
+.ehong-idcode-val3{
+	border:solid 1px #6C9;
+	background-color:#DCDDD8;
+}
+.ehong-idcode-val4{
+	border:solid 1px #6C9;
+	background-color:#F1DEFF;
+}
+.ehong-idcode-val5{
+	border:solid 1px #6C9;
+	background-color:#ACE1F1;
+}
+.ehong-code-val-tip{
+	font-size:12px;
+	color:#1098EC;
+	top:0px;
+	*top:-3px;
+	position:relative;
+	margin:0px 0px 0px 4px;
+	cursor:pointer;
+}

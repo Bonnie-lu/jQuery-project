@@ -1,0 +1,271 @@
+
+.cart-server{
+    padding: 50px 0 30px;
+    border-top: 2px solid #eee;
+}
+.toper-server{
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+.toper-server ul{
+	display: block;
+	margin-left: 30px;
+	overflow: hidden;
+}
+.toper-server li{
+    display: block;
+    float: left;
+    height: 40px;
+    margin: 0 40px;
+}
+.toper-server .ico{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/common_z.png) no-repeat;
+	vertical-align: middle;
+	float: left;
+}
+.toper-server .ico-server-o1{
+	background-position: -244px -100px;
+}
+.toper-server .ico-server-o2{
+	background-position: -244px -50px;
+}
+.toper-server .ico-server-o3{
+	background-position: -244px 0;
+}
+.toper-server .ico-server-o4{
+	background-position: -150px -184px;
+}
+.toper-server ul li p {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    color: #999999;
+}
+.toper-server ul li h4{
+	font-size: 16px;
+    margin: 0 0 5px 50px;
+    color: #4d4d4d;
+    font-weight: 300;
+}
+/*====================内容=============*/
+/*===============无商品时==========*/
+.container{
+	width: 990px;
+	margin: 0 auto;
+}
+.container .spare{
+	position: relative;
+	margin: 10px auto;
+	width: 881px;
+	height: 355px;
+}
+.spare .list{
+	position: absolute;
+	top: 160px;
+	left: 400px;
+}
+.spare .list li{
+	float: left;
+	margin-right: 8px;
+	background:#ff7723;
+	color: white;
+	border-radius: 3px;
+}
+.spare .list li a{
+	padding: 0 11px;
+	line-height: 22px;
+	font-size: 14px;
+}
+.spare .list li a:hover{
+	color: white;
+}
+/*===============有商品时=========*/
+.cart-panel{
+	border: 1px solid #d9d9d9;
+	margin: 20px 0;
+}
+.cart-panel .hd {
+    padding: 0 20px;
+    background-color: #ebebeb;
+    color:#737373;
+    overflow: hidden;
+    
+}
+
+.order-title li{
+	float: left;
+	line-height: 40px;
+	font-size: 12px;
+	width: 130px;
+	text-align: center;
+	font-weight: bold;
+}
+.cart-panel .bd{
+	padding: 0 20px;
+}
+.cart-panel .bd a:hover{
+	color: #FF6600;
+	text-decoration: underline;
+}
+.order-title .product{
+	width: 400px;
+	text-align: left;
+}
+.cart-panel .bd .product img{
+	width:56px; 
+	height:56px;
+}
+.cart-panel .bd ul{
+	font-size: 12px;
+    margin: 0;
+    padding: 15px 0;
+    list-style: none;
+    border-top: 2px dotted #d9d9d9;
+    overflow: hidden;
+}
+.cart-panel .bd ul:first-child{
+	border-top: none;
+}
+.cart-panel .bd ul li{
+	float: left;
+	width: 130px;
+	text-align: center;
+}
+.cart-panel .bd ul .product{
+	width: 400px;
+	text-align: left;
+	color: #737373;
+	line-height: 20px;
+}
+.cart-panel .bd ul .product img{
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+.cart-panel .bd  .market-price{
+    text-decoration: line-through;
+    color: #999999;
+    padding: 18px 0;
+}
+.cart-panel .bd  .order-price{
+	font-weight: bold;
+    color: #ff6a00;
+    padding: 18px 0;
+}
+.cart-panel .bd .num{
+	margin: 16px 0;
+}
+.cart-panel .bd .num span{
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #d2d2d2;
+	width: 9px;
+	height: 9px;
+	cursor: pointer;
+	background: url(../img/common_z.png) no-repeat;
+}
+.cart-panel .bd .num .first{
+    background-position: -274px -234px;
+}
+.cart-panel .bd .num .last{
+    background-position: -396px -239px;
+}
+.cart-panel .bd .num span:hover{
+	background-color: #e6e6e6;
+    border-color: #bababa;
+}
+.cart-panel .bd .num input{
+	width: 26px;
+	height: 10px;
+	display: inline-block;
+    border-color: #d9d9d9;
+    padding: 6px;
+    box-shadow: none;
+    color: #4d4d4d;
+    background-color: #ffffff;
+    border: 1px solid #d2d2d2;
+    outline-style: none;
+}
+.cart-panel .bd .num input:hover{
+	border-color: #bababa;
+}
+.cart-panel .bd .num input:focus{
+	border-color: #bababa;
+}
+.cart-panel .bd .operate{
+	width: 90px;
+	padding: 8px 0 8px 40px;
+}   
+.cart-panel .bd .operate a{
+	display: block;
+	line-height: 20px;
+	text-align: left;
+	color: #737373;
+}
+.cart-panel .bd .operate a:hover{
+	color: #FF6600;
+	text-decoration: underline;	
+}
+.set-bar {   
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.set-info{
+    font-size: 12px;
+    line-height: 50px;
+    float: left;
+    width: 870px;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #d9d9d9;
+    border-right: 0;
+    width: 829px;
+    color: #737373;
+}
+.set-info .ico-back{
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 22px;
+    height: 22px;
+	cursor: pointer;
+	background: url(../img/common_z.png) no-repeat;
+	background-position: -68px -317px;
+}
+.set-info a:hover{
+	text-decoration: underline;
+}
+.set-stat{
+	float: right;
+	width: 200px;
+	height: 50px;
+	color: #737373;
+}
+.set-stat .price{
+	width: 149px;
+	float: right;
+	font-size: 18px;
+    font-weight: bold;    
+    color: #ff6a00;
+    text-align: center;
+}
+#jiesuan{
+	font-weight: bold;
+    float: right;
+    width: 120px;
+    height: 52px;
+    padding: 10px 16px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #ff6a00;
+    border: none;
+    border-color: #ff6a00;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    text-transform: none;
+}

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/product.css"/>
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fly.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/product.js" type="text/javascript" charset="utf-8"></script>		
+	</head>
+
+	<body>
+		<!-- 顶部导航 -->
+		<div class="headour">
+			<div class="site-nav">					
+					<ul class="site-nav-left">
+						<li style="width: 158px;">
+							<a href="index.html"><span class="ico1"></span>收藏鲜花网(hua.com)</a>
+						</li>
+						<li class="dropdown">
+							<a href="#"><span class="ico2"></span>关注微信</a>
+							<div class="dropdown-menu">
+								<img src="img/wechat_qrcode.jpg" height="124" width="124">
+								<p>扫码关注<br>回复"礼物" 更多惊喜！</p>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#"><span class="ico3"></span>手机花礼</a>
+							<div class="dropdown-menu">
+								<img src="img/app_qrcode.jpg" height="124" width="124">
+								<p>首单再减20！<br>(需输入券号9920)</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="site-nav-right">
+						<li class="menu login" id="LoginInfo">
+							<a href="logon.html">你好，请登录</a>
+							<a href="Register.html">注册</a>
+						</li>
+						<li class="site-nav-pipe">|</li>
+						<li class="menu">
+							<a href="#"  >订单查询</a>
+						</li>
+						<li class="site-nav-pipe">|</li>
+
+						<li class="dropdown">
+							<a href="#">我的花礼</a>
+						</li><li class="site-nav-pipe">|</li>
+						<li class="dropdown">
+							<a href="#">客户服务<span class="ico4"></span></a>
+							<div class="dropdown-service">
+								<a href="#">在线付款</a>
+								<a href="#">帮助中心</a>
+								<a href="#">售后服务</a>
+								<a href="#">配送范围</a>
+								<a href="#">留言反馈</a>
+							</div>
+						</li>
+						<li class="site-nav-pipe">|</li>
+						<li class="dropdown crat">
+                    		<a href="showcart.html" >
+                    			<span class="ico5"></span>购物车<span class="text-primary" id="gwcCount">(0)</span>
+                    			<span class="ico4"></span>
+                    		</a>
+                    		<div class="dropdown-cart CartInfo" id="CartInfo">
+                    			<div class="spare">
+                    				您的购物车中没有商品，先去选购吧！
+                    			</div>
+                    			<div class="cart">
+                    				
+                    			</div>                    			
+                    			<div class="settlement">
+                					<div class="total-price">
+                						<span><b class="first"></b>件总计：<b>¥</b></span>
+                						<span class="price-num"></span>
+                					</div>
+                					<a href="showcart.html">去购物车结算</a>
+                				</div>
+                    		</div>
+                    	</li>
+						<li class="site-nav-pipe">|</li>					
+						<li>保鲜花 金玫瑰 音乐盒等礼物</li>
+					</ul>
+			</div>
+		</div>		
+		<!-- 顶部导航 End -->
+		<!-- 头部 -->
+    <div class="header">
+        <div class="logo">
+            <h1><a href="index.html" class="logo-bd">中国鲜花礼品网(花礼网)</a></h1>
+            <i></i>
+            <h2>中国鲜花礼品网 始于2005，简称花礼网</h2>
+        </div>
+        <div class="search">
+            <form name="i_search">
+                <div class="input-group">
+                    <input name="keyword" type="text" class="form-control" placeholder="商品关键词">
+                    <button class="btn" type="button">搜索</button>
+                    <div class="help-block">
+        				<a href="#">红玫瑰</a> | <a href="#">永生花</a> | <a href="#">生日鲜花</a> | <a href="#">礼品卡</a>
+    				</div>
+                </div>
+            </form>            
+        </div>
+        <div class="service">
+            <span class="ico-phone"></span>400-889-8188
+            <i></i>
+            <a href="#"><span class="ico-headset"></span>在线客服</a>
+        </div>
+    </div>
+    <!-- 头部 End -->
+	<!--导航-->
+	<div class="common">
+		<div class="container">
+			<div class="categorys">
+				<h3 class="categorys-title"><a href="#">全部商品导购<span></span></a></h3>
+				<div class="dropdown-menu">
+					<h4>鲜花</h4>
+	                <ul class="cate-list">
+	                    <li><a href="#">爱情鲜花</a></li>
+	                    <li><a href="#">友情鲜花</a></li>
+	                    <li><a href="#">生日鲜花</a></li>
+	                    <li><a href="#">问候长辈</a></li>
+	                    <li><a href="#">祝贺鲜花</a></li>
+	                    <li><a href="#">婚庆鲜花</a></li>
+	                    <li><a href="#">探病慰问</a></li>
+	                    <li><a href="#">道歉鲜花</a></li>
+	                    <li><a href="#">开业花篮</a></li>
+	                </ul>
+	                <h4>永生化</h4>
+	                <ul class="cate-list">
+	                    <li><a href="#">经典花盒</a></li>
+	                    <li><a href="#">巨型玫瑰</a></li>
+	                    <li><a href="#">薰衣草</a></li>
+	                    <li><a href="#">永生瓶花</a></li>
+	                    <li><a href="#">特色永生花</a></li>
+	                </ul>
+	                <h4>蛋糕</h4>
+	                <ul class="cate-list">
+	                    <li><a href="#">元祖</a></li>
+	                    <li><a href="#">好利来</a></li>
+	                    <li><a href="#">幸福西饼</a></li>
+	                    <li><a href="#">诺心</a></li>
+	                    <li><a href="#">窝夫小子</a></li>
+	                    <li><a href="#">Mcake</a></li>
+	                    <li><a href="#">可颂坊</a></li>
+	                    <li><a href="#">米卡米卡</a></li>
+	                    <li><a href="#">Vcake</a></li>
+	                    <li><a href="#">一品轩</a></li>
+	                    <li><a href="#">卡拉多</a></li>
+	                    <li><a href="#">Oneonecake</a></li>
+	                    <li><a href="#">全国品牌</a></li>
+	                </ul>
+	                <h4>礼品</h4>
+	                <ul class="cate-list">
+	                    <li><a href="#">泰国保鲜花</a></li>
+	                    <li><a href="#">音乐盒</a></li>
+	                    <li><a href="#">水晶内雕</a></li>
+	                    <li><a href="#">金箔花</a></li>
+	                    <li><a href="#">化妆镜</a></li>
+	                    <li><a href="#">香薰系列</a></li>
+	                    <li><a href="#">音乐睡枕</a></li>
+	                    <li><a href="#">花瓶/相框</a></li>
+	                    <li><a href="#">镀金玫瑰</a></li>
+	                    <li><a href="#">LED蜡烛</a></li>
+	                    <li><a href="#">卡通花束</a></li>
+	                    <li><a href="#">品牌公仔</a></li>
+	                    <li><a href="#">智能音响</a></li>
+	                    <li><a href="#">首饰</a></li>
+	                    <li><a href="#">手工巧克力</a></li>
+	                    <li><a href="#">进口巧克力</a></li>
+	                    <li><a href="#">创意礼品</a></li>
+	                    <li><a href="#">礼品卡</a></li>
+	                </ul>
+	                <h4>绿植</h4>
+	                <ul class="cate-list">
+	                    <li><a href="#">绿色植物</a></li>
+	                    <li><a href="#">盆栽花卉</a></li>
+	                </ul>
+				</div>
+			</div>
+			<ul class="nav">
+	            <li><a href="index.html">首页</a></li>
+	            <li><a href="#">鲜花</a></li>
+	            <li><a href="#">永生花</a></li>
+	            <li><a href="#">蛋糕</a></li>
+	            <li><a href="#">礼品</a></li>
+	            <li><a href="#">花语大全</a></li>	       
+	            <li><a href="#">天蝎座礼物鲜花</a></li>
+        	</ul>			
+		</div>
+			
+	</div>
+	<!--导航end-->
+	<!-- 内容-->
+	<div class="containers">
+		<div class="breadcrumbs">
+	        <a href="index.html"><b>首页</b></a> <span> &gt; </span>
+	        <a href="#" class="type1">礼品</a><span> &gt; </span>
+	        <a href="#" class="type2">金箔花</a><span> &gt; </span>
+	        <span class="text-primary">999纯金箔玫瑰+陶瓷花瓶</span>
+    	</div>
+    	<div class="product-wrapper">
+    		<div class="product-l">
+            <!-- 商品图片 -->
+            	<div class="pro-preview">
+                	<!-- 大图 -->
+                    <div class="pro-bigimage">
+                    	<img src="" class="smallImg">
+                    	<div class="smallArea"></div>
+                    </div>
+                	<!-- 大图 End -->
+                	<!-- 小图 -->
+                    <div class="pro-thumb">
+                        <img src="" class="active">
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                    </div>
+                	<!-- 小图 End -->
+                	<!-- 放大镜 -->
+                    <div class="bigArea">
+                       	<img src="" class="bigImg"/>
+                    </div>
+                	<!-- 放大镜 End-->
+            	</div>
+            <!-- 商品图片 End -->
+        	</div>
+        	<div class="product-r">
+        		<div class="title">
+                	<h3 class="product-title">999纯金箔玫瑰+陶瓷花瓶----千足金箔玫瑰 最佳送女友送爱人礼物 结婚纪念礼物</h3>
+                	<p class="product-subtitle"></p>
+            	</div>
+	            <div class="attribute">
+	            	<p><b>类 别：</b><span class="span1">礼品-金箔花 编 号：1061006</span></p>
+	            	<p><b>材 料：</b><span class="span2">金箔玫瑰采用纯度99.9%千足金箔制作，花朵、叶片为纯金箔，内部有一个透明骨架作为支撑，绝非镀金工艺，花杆为聚乙烯镀金，轻盈、不易折。</span></p>
+	            	<p><b>包 装：</b><span class="span3">粉色包装盒、国家金银质量监督检测中心出具的检验证书、品牌保证卡、防伪标签、搭配手提袋。</span></p>
+	            	<p><b>备 注：</b><span class="span4"></span></p>
+	            	<p><b>附 送：</b><span>免费送精美贺卡，代打印您的祝福。(下单时填了留言才赠送)</span></p>
+	            	<p><b>配 送：</b><span>全国（本商品通过快递公司或邮政EMS寄送，全国可达，包邮）</span></p>
+	            	<p><b>说 明：</b><span class="text-primary">畅销榜商品，优惠价！</span></p>	            	              
+	            </div>
+	            <div class="price">
+	            	<p class="first">市场价：￥<span class="price-original">256</span></p>
+	            	<p>花礼价：<b>¥</b><span class="price-sell">138</span></p>
+	            </div>
+	            <div class="btn-buy">
+                	<a href="#" class="Btn_AddToCart"><span class="ico-cart-white"></span>立即购买</a>
+                	<a href="#" class="last"><span class="ico-heart"></span>关 注</a>
+            	</div>
+            	<div class="share">
+                	<h4>分享：</h4>
+	                <div class="share-box">
+	                    <a class="bds_mshare" title="分享到一键分享"></a>
+	                    <a class="bds_sqq" title="分享到QQ好友"></a>
+	                    <a class="bds_weixin" title="分享到微信"></a>
+	                    <a class="bds_tsina" title="分享到新浪微博"></a>
+	                    <a class="bds_tqq"  title="分享到腾讯微博"></a>
+	                    <a class="bds_more" title="more"></a>
+	                    <a class="last">更多</a>
+	                </div>
+            	</div>
+        	</div>       	
+    	</div>
+    	<!--热销推荐-->
+    	<div class="hot-goods">
+    		<h4>热销推荐</h4>
+    		<ul class="hot-box">
+    			<li>
+    				<a href="#"><img src="img/left-01.jpg"/></a>
+    				<a href="">999纯金箔玫瑰+陶瓷花瓶-千足金箔玫瑰 最佳送女友送爱人礼物 结婚纪</a>
+    				<p>¥ 117</p>
+    			</li>
+    			<li>
+    				<a href="#"><img src="img/left-02.jpg"/></a>
+    				<a href="">999纯金箔玫瑰-永不凋谢的玫瑰 情人节礼物 送女友生日礼品 爱的信物</a>
+    				<p>¥ 118</p>
+    			</li>
+    			<li>
+    				<a href="#"><img src="img/left-03.jpg"/></a>
+    				<a href="">999纯金箔康乃馨-千足金箔，最佳送母亲礼物</a>
+    				<p>¥ 118</p>
+    			</li>
+    			<li>
+    				<a href="#"><img src="img/left-04.jpg"/></a>
+    				<a href="">999纯金箔玫瑰+水晶花瓶-千足金箔玫瑰花，AAA级水晶材料，送女友送</a>
+    				<p>¥ 138</p>
+    			</li>
+    			<li>
+    				<a href="#"><img src="img/left-05.jpg"/></a>
+    				<a href="">999纯金箔康乃馨+水晶花瓶-送母亲最佳礼物，千足金箔康乃馨，水晶</a>
+    				<p>¥ 148</p>
+    			</li>
+    			<li>
+    				<a href="#"><img src="img/left-06.jpg"/></a>
+    				<a href="">幸福娃娃/珍珠白-金箔画，画芯金箔，采用3D技术</a>
+    				<p>¥ 298</p>
+    			</li>
+    			
+    		</ul>
+    	</div>    	
+    	<!--热销推荐end-->
+    	<!--商品详情-->
+    	<div class="goods f1">
+    		<div class="hd">
+    			<ul class="hd-l">
+    				<li class="active"><a href="#">商品详情</a></li>
+    				<li><a href="#">用户评价</a></li>
+    				<li><a href="#">常见问题</a></li>
+    				<li><a href="#">购物保障</a></li>
+    			</ul>
+    			<div class="hd-r">
+					<b>¥</b><span class="price-sell">138</span>
+    				<a href="#" class="Btn_AddToCart">立即购买</a>
+    			</div>
+    			
+    		</div>
+    		<div class="big-img">
+    			<img src="img/big-01.jpg"/>
+    			<img src="img/big-02.jpg"/>
+    			<img src="img/big-03.jpg"/>
+    			<img src="img/big-04.jpg"/>
+    			<img src="img/big-05.jpg"/>
+    			<img src="img/big-06.jpg"/>
+    			<img src="img/big-07.jpg"/>
+    			<img src="img/big-08.jpg"/>
+    			<img src="img/big-09.jpg"/>
+    			<img src="img/big-10.jpg"/>
+    			<img src="img/big-11.jpg"/>
+    			<img src="img/big-12.jpg"/>
+    			<img src="img/big-13.jpg"/>
+    			<img src="img/big-14.jpg"/>
+    			<img src="img/big-15.jpg"/>
+    			<img src="img/big-16.jpg"/>
+    			<img src="img/big-17.jpg"/>
+    			<img src="img/big-18.jpg"/>
+    		</div>
+    	</div>
+    	<div class="goods f2">
+    		<div class="hd">
+    			<ul class="hd-l">
+    				<li><a href="#">商品详情</a></li>
+    				<li class="active"><a href="#">用户评价</a></li>
+    				<li><a href="#">常见问题</a></li>
+    				<li><a href="#">购物保障</a></li>
+    			</ul>    			   			
+    		</div>
+    		<div class="big-img">
+    			<img src="img/pinlun.png"/>
+    		</div>
+    	</div>
+    	<div class="goods f3">
+    		<div class="hd">
+    			<ul class="hd-l">
+    				<li><a href="#">商品详情</a></li>
+    				<li><a href="#">用户评价</a></li>
+    				<li class="active"><a href="#">常见问题</a></li>
+    				<li><a href="#">购物保障</a></li>
+    			</ul>    			   			
+    		</div>
+    		<div class="big-img">
+    			<div>
+                    <p>
+                        <span class="font_weight"><font color="red">常见问题：</font></span><br>
+                        <font color="#509207">·我怎么订购？</font><br>
+                        您在网上提交订单，并按提示支付完款项后，我们即按您要求的时间配送上门。<br>
+                        订购流程：选择商品 → 放入购物车 → 提交我的订单 → 会员购买/非会员购买通道选择 → 填写订单信息 → 支付款项 &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.hua.com/help/demo.htm" target="_blank">订购动画演示&gt;&gt;</a>
+                    </p>
+                    <p>
+                        <br>
+                        <font color="#509207">·我怎么付款？</font><br>
+                        可以网上支付、或银行汇款、上门收款。网上支付方式，我们支持国内数十家银行卡网上支付，支持Visa、Master信用卡支付，支持Paypal付款，支持国内主要银行信用卡的无磁无密E-POS支付。如果您的银行卡无法网上支付，建议您银行汇款，温馨提醒您：银行ATM机或自助终端上操作转款方便快捷，无需柜台排队，同行均为实时到帐。上门收款指上门向订购人收取款项后安排配送，限指定城市市区。提交订单成功后，将出现您选择的付款方式的操作指引，提前了解可点击
+                        <a href="http://www.hua.com/help/payment.htm" target="_blank">付款方式&gt;&gt;</a>
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        <font color="#509207">·异地送鲜花/蛋糕可以吗？多久能送到？</font>[具体如：我人在北京，晚上要送花到长沙，可以吗？]<br>
+                        可以的，我们全国连锁经营，最快3个小时左右可送达全国900多个城市，由当地加盟店当天配送前新鲜制作送出。 当然，您也可以完全放心提前订购，提交订单时可自由选择需配送鲜花/蛋糕的时间，我们将按您的要求安排订单，确保在您指定的日期送达。
+                    </p>
+                    <p>
+                        <br>
+                        <font color="#509207">·是先付款再配送吗？先付款怎么保证我的东西能按要求送到？</font><br>
+                        鲜花商品特殊，需先付款后配送，还请您支持和谅解。我们是经营了多年的品牌服务商，有广泛的行业影响，艾瑞排名行业第一，客户的口碑是我们生命，我们将竭尽所能为您提供最好的产品和服务，同时公司有严格的售后服务条款和承诺，确保客户利益，详见下述售后服务说明。
+                    </p>
+                    <p>&nbsp; </p>
+                    <p>
+                        <font color="#509207">·送到的蛋糕会和图片上的一样吗？</font><br>
+                        糕点师是按照图片和文字的要求来制作蛋糕的，效果基本是一致，但不同糕点师制作手工略有区别，另受当地原料因素等原因影响，当某些材料、颜色及季节性水果缺乏时，我们会以相近的替代，实际收到的蛋糕与网上图片可能存在差异。
+                    </p>
+                    <p>&nbsp; </p>
+                    <p>
+                        <span class="font_weight"><font color="red">关于售后服务：</font></span><br>
+                        · 我们一直致力于持续提升服务水平，追求零客诉，我们为客户提供完善的售后服务。如果出现误单、花材不符、贺卡有误或者其他任何您不满意的情况，欢迎您第一时间与我们联系，我们将尽快为您做出回复和处理。200%退赔承诺，即如果漏单未送，订单款项全额退还给您，原订单商品同时再免费配送一次，详见
+                        <a href="http://www.hua.com/help/afterservice.htm" target="_blank">售后服务条款&gt;&gt;</a>
+                    </p>
+                    <p>&nbsp;</p>
+                </div>
+    		</div>
+    	</div>
+    	<div class="goods f4">
+    		<div class="hd">
+    			<ul class="hd-l">
+    				<li><a href="#">商品详情</a></li>
+    				<li><a href="#">用户评价</a></li>
+    				<li><a href="#">常见问题</a></li>
+    				<li class="active"><a href="#">购物保障</a></li>
+    			</ul>    			   			
+    		</div>
+    		<div class="big-img">
+    			<ul class="tab-indicators">
+                    <li class=""><a href="#"><span class="ico ico-server-go1"></span>十年品牌</a></li>
+                    <li><a href="#"><span class="ico ico-server-go2"></span>销量第一</a></li>
+                    <li class="active"><a href="#"><span class="ico ico-server-go3"></span>百万客户信赖</a></li>
+                    <li><a href="#"><span class="ico ico-server-go4"></span>订单实拍</a></li>
+                    <li><a href="#"><span class="ico ico-server-go5"></span>3小时配送</a></li>
+                    <li><a href="#"><span class="ico ico-server-go6"></span>200%退赔承诺</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="serverPane01">
+                        <img src="img/server_01.jpg" height="350" width="910">
+                    </div>
+                    <div class="tab-pane fade" id="serverPane02">
+                        <img src="img//server_02.jpg" height="350" width="910">
+                    </div>
+                    <div class="tab-pane fade active in" id="serverPane03">
+                        <img src="img//server_03.jpg" height="350" width="910">
+                    </div>
+                    <div class="tab-pane fade" id="serverPane04">
+                        <img src="img//server_04.jpg" height="350" width="910">
+                    </div>
+                    <div class="tab-pane fade" id="serverPane05">
+                        <img src="img//server_05.jpg" height="350" width="910">
+                    </div>
+                    <div class="tab-pane fade" id="serverPane06">
+                        <img src="img//server_06.jpg" height="350" width="910">
+                    </div>
+    			</div>
+    		</div>
+    	</div>
+    	<!--商品详情end-->
+    	
+    	<div style="clear: both;"></div>
+	</div>
+	<!--内容end-->
+	<!--底部-->
+    <!-- 尾部导航 -->
+    <div class="footer-nav">
+		<a href="#">首页</a> <b>|</b>
+		<a href="#">关于我们</a> <b>|</b>
+		<a href="#">媒体报道</a> <b>|</b>
+		<a href="#">联系方式</a> <b>|</b>
+		<a href="#">企业团购</a> <b>|</b>
+		<a href="#">花店加盟</a> <b>|</b>
+		<a href="#">友情链接</a> <b>|</b>
+		<a href="#">在线补款</a> <b>|</b>
+		<a href="#">为什么选择中国鲜花礼品网</a>
+	</div>
+    <!-- 尾部导航 End -->
+    <!-- 通用尾部 -->
+<footer>
+	<div class="auth">
+		<a href="#"><img src="img/cnnic.png" height="37" width="102" class="auth-one"/></a>
+		<a href="#"><img src="img/cxwz.gif" height="40" width="112"></a>
+		<a href="#"><img src="img/smyz.gif" height="40" width="106"></a>
+		<img src="img/slogan.png" height="50" width="212">
+		<a href="#"><img src="img/zfb.gif" height="49" width="96"></a>
+		<a href="#"><img src="img/100.jpg" height="49" width="150"></a>
+		<a href="#"><img src="img/bico1.jpg" alt="ICP" height="46" width="35"></a>
+		<a href="#"><img alt="网警" src="img/bico2.jpg" height="46" width="35"></a>
+		<a href="#"><img src="img/bico3.jpg" alt="网安" height="46" width="35"></a>
+	</div>
+	<p>
+		<a href="#" title="中国花卉协会会员">中国花卉协会会员</a>
+		<a href="#">中国电子商务协会会员</a> ICP经营许可证：
+		<a href="#">粤B2-20050744</a> <b>|</b>
+		<a href="#">粤ICP备09171662号</a> <span class="ico beian"></span>粤公网安备44030502000373号 Copyright © 2005-2016</p>
+	<p class="last">
+		花礼网 （中国鲜花礼品网） <a href="index.html">www.hua.com</a> 中国领先礼品网品牌,专业礼品速递服务
+	</p>
+</footer>
+    <!-- 通用尾部 End -->
+	<!--右侧固定定位start-->
+		<div class="r-fixde">
+		<ul class="list">
+			<li class="one">
+				<span class="ico6 ico"></span>
+				<div class="ibar_login_box">
+					<img src="img/avatar_none.jpg"/>
+					<p>您好，请 <a href="logon.html">登录</a> | <a href="Register.html">注册</a></p>
+					<div class="login_btnbox">
+						<span class="ico16 ico"></span><a>我的订单</a>
+					</div>
+				</div>
+			</li>
+			<li class="secend">
+				<a href="showcart.html">
+					<i></i>
+					<span class="ico7 ico"></span>
+					<span class="ico9 ico">购物车</span>
+					<span class="ico8 ico">0</span>
+					<i></i>
+					<div></div>
+				</a>
+				<div class="dropdown-cart CartInfo">
+        			<div class="spare">
+        				您的购物车中没有商品，先去选购吧！
+        			</div>
+        			<div class="cart">
+        				
+        			</div>                    			
+        			<div class="settlement">
+    					<div class="total-price">
+    						<span><b class="first"></b>件总计：<b>¥</b></span>
+    						<span class="price-num"></span>
+    					</div>
+    					<a href="showcart.html">去购物车结算</a>
+    				</div>
+        			
+        		</div>
+			</li>
+			<li>
+				<span class="ico10 ico"></span>
+				<div class="mp_tooltip">我的关注</div>
+			</li>
+			<li>
+				<span class="ico11 ico"></span>
+				<div class="mp_tooltip">最近查看</div>
+			</li>
+			<li>
+				<span class="ico12 ico"></span>
+				<div class="mp_tooltip">400-899-8188</div>
+			</li>
+			<li>
+				<span class="ico13 ico"></span>
+				<div class="mp_tooltip">在线客服</div>
+			</li>
+		
+		</ul>
+		<div class="footer">
+			<span class="ico14 ico"></span>
+			<div class="mp_qrcode">
+				<p><img src="img/QR_wx.jpg" width="110" height="110">关注微信公众号</p>
+                <p><img src="img/QR_app.jpg" width="110" height="110">下载花礼APP</p>                           
+			</div>
+		</div>
+		<div class="return-top">
+			<span class="ico15 ico"></span>
+			<div class="mp_tooltip">回到顶部</div>
+		</div>
+	</div>
+	<!--右侧固定定位end-->
+	</body>
+
+</html>
